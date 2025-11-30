@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q4 Earnings Reveal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.min.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/atom-one-light.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <style>
+    .earnings-highlight {
+      font-size: 2.6rem;
+      color: #0aa35b;
+      font-weight: 600;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Quarterly Earnings Briefing</h1>
+        <p class="tagline">Stakeholder Edition &mdash; Modern Insights</p>
+        <p>Prepared by <strong>Rick Mondal</strong> &bull; <a href="mailto:23f2000340@ds.study.iitm.ac.in">23f2000340@ds.study.iitm.ac.in</a></p>
+        <p class="fragment">Financial Technology Office &mdash; Q4 FY2025</p>
+        <aside class="notes">
+          Welcome stakeholders, set the tone for a data-driven walkthrough emphasizing modernization of reporting workflows.
+        </aside>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+## Performance Snapshot
+- **Net income:** `+12%` YoY
+- **Operating margin:** 28.4%
+- **Earnings per share:** $3.42
+- Portfolio yield ↑ 45 bps
+
+<small>Leverage interactive overlays during Q&A to deep dive into segment variance.</small>
+        </textarea>
+        <aside class="notes">
+          Transition into detailed KPI drill-downs; mention that supporting dashboards are accessible via the investor portal.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Automation Enhancements</h2>
+        <pre><code class="language-javascript">const forecast = (growthRate, base) => base * (1 + growthRate);
+const q1Projection = forecast(0.07, 4.2e9);
+console.log(`Q1 revenue projection: $${(q1Projection / 1e9).toFixed(2)}B`);
+        </code></pre>
+        <p class="fragment">Straight-through processing reduced manual review time by <strong>35%</strong>.</p>
+        <aside class="notes">
+          Narrate how the operations team embedded the model in the approval workflow and the measurable cycle-time gains.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Capital Adequacy Outlook</h2>
+        <p>Tier 1 capital ratio guidance:</p>
+        <p class="fragment">$$\text{Tier 1 Ratio} = \frac{\text{CET1 Capital}}{\text{Risk-Weighted Assets}}$$</p>
+        <p class="fragment">Projected CET1: <span class="earnings-highlight">13.7%</span></p>
+        <aside class="notes">
+          Reinforce regulatory alignment and note that buffers stay 120 bps above internal policy minimums.
+        </aside>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      plugins: [RevealHighlight, RevealNotes, RevealMath.KaTeX],
+      math: {
+        katexScript: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js',
+        katexStylesheet: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false }
+        ]
+      }
+    });
+  </script>
+</body>
+</html>
